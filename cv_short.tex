@@ -1,0 +1,74 @@
+\documentclass[a4paper, oneside, final, 10pt]{scrartcl}
+
+\usepackage[top=1in, bottom=1.2in, left=1in, right=1in]{geometry}
+
+\usepackage{titlesec}
+\usepackage{scrlayer-scrpage}
+\usepackage{marvosym}
+\usepackage{mdwlist}
+\usepackage{array}
+\usepackage{multicol}
+
+\titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+
+\pagestyle{scrheadings}
+\renewcommand{\headfont}{\normalfont\rmfamily\scshape}
+
+\renewcommand{\labelitemi}{$\infty$}
+
+\makeatletter
+\newcommand*{\rom}[1]{\expandafter\@slowromancap\romannumeral #1@}
+\makeatother
+
+\cofoot{\footnotesize{2542 Kottingbrunn, Nieder\"osterreich, Austria\\
+{\Large\Letter} \href{mailto:contact@alistair-martin.com}{contact@alistair-martin.com} {\Large\Telefon} +43 (0)681 10446511} {\Large\Info} \href{https://www.alistair-martin.com/}{alistair-martin.com} }
+
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks, urlcolor=linkcolour, linkcolor=linkcolour}
+
+\begin{document}
+
+{\centering
+{\huge \textsc{Dr.~Alistair G.~Tiefenbacher}}\\
+\textsc{Data Scientist, Statistician, \& Academic Researcher}
+\vspace{0.4cm}
+\par}
+
+
+\vfill
+\input{sections/about.tex}
+
+% \vfill
+% \input{sections/current.tex}
+
+\vfill
+\input{sections/research.tex}
+
+\vfill
+\input{sections/education.tex}
+
+%\vfill
+%\input{sections/teaching.tex}
+
+%\vfill
+%\input{sections/conferences.tex}
+
+%\vfill
+%\input{sections/other.tex}
+
+\vfill
+\input{sections/publications.tex}
+
+% \vfill
+% \input{sections/prizes.tex}
+
+\vfill
+\input{sections/skillset.tex}
+
+\vfill
+
+\end{document}
