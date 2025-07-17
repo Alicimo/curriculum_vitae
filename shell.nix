@@ -1,7 +1,6 @@
 with import <nixpkgs> { };
 
-stdenv.mkDerivation {
-  name = "mydoc";
+mkShell {
   buildInputs = [ (texlive.combine {
                     inherit (texlive)
                       scheme-small
@@ -16,12 +15,4 @@ stdenv.mkDerivation {
                   })
                   glibcLocales
                 ];
-  src = ./.;
-  buildPhase = "make";
-
-  meta = with lib; {
-    description = "Describe your document here";
-    license = licenses.bsd3;
-    platforms = platforms.linux;
-  };
 }
